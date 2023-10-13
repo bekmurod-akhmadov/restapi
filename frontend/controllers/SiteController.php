@@ -76,6 +76,19 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $session = Yii::$app->session;
+        $code = rand(1000000,9999999);
+//        Yii::$app->mailer->compose()
+//            ->setFrom('xbek1321@gmail.com')
+//            ->setTo('ahmadovbekmurod1321@gmail.com')
+//            ->setSubject('Tasqiqlash kodi')
+//            ->setHtmlBody("
+//<div>
+//   <h2 style='color: red;margin-bottom: 20px;border: 1px solid red;padding: 10px;20px;'>Message title</h2>
+//   <p>Lorem2Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+//   <a style='padding: 10px;20px;border-radius: 24px;background-color: #0a53be;color: #fff;font-size: 15px;' href='https://bekmurod-akhmadov.netlify.app/'>Saytga o'tish</a>
+//</div>
+//            ")
+//            ->send();
         $session->addFlash('success' , 'Hammasi ishlayapti');
         return $this->render('index');
     }

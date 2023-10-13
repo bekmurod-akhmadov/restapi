@@ -9,7 +9,7 @@ $this->title = 'My Yii Application';
         <div class="container-fluid py-5 text-center">
             <h1 class="display-4">Congratulations!</h1>
             <p class="fs-5 fw-light">You have successfully created your Yii-powered application.</p>
-            <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
+            <p><a class="btn btn-lg btn-success" href="" id="create-button">Get started with Yii</a></p>
         </div>
     </div>
 
@@ -44,9 +44,23 @@ $this->title = 'My Yii Application';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <p><a class="btn btn-outline-secondary" href="#" >Yii Extensions &raquo;</a></p>
             </div>
         </div>
 
     </div>
 </div>
+
+
+<?php
+    \yii\bootstrap5\Modal::begin([
+        'id' => 'ModalId',
+        'size' => 'modal-lg',
+          'title' => 'Hello world',
+
+    ]);
+
+    echo 'Salom Xurshida!';
+
+    \yii\bootstrap5\Modal::end();
+?>

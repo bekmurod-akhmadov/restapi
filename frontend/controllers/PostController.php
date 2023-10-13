@@ -20,4 +20,9 @@ class PostController extends Controller
             'models' => $data
         ]);
     }
+
+    public function actionLogin()
+    {
+        
+    }
 }
